@@ -1,0 +1,137 @@
+{
+    "summary": {
+        "best_method_auc": "GNN",
+        "best_auc_score": 0.7900077208082635,
+        "best_method_ap": "GNN",
+        "best_ap_score": 0.7659161018536628,
+        "gnn_rank_auc": 1,
+        "gnn_rank_ap": 1
+    },
+    "detailed_results": {
+        "GNN": {
+            "auc_mean": 0.7900077208082635,
+            "auc_std": 0.04666406427035934,
+            "ap_mean": 0.7659161018536628,
+            "ap_std": 0.034382232078235694
+        },
+        "Dijkstra": {
+            "auc_mean": 0.4123107564980628,
+            "auc_std": 0.042084509614522474,
+            "ap_mean": 0.44341296682442016,
+            "ap_std": 0.02686455804593494
+        },
+        "MST": {
+            "auc_mean": 0.4317104293916299,
+            "auc_std": 0.02773786574551775,
+            "ap_mean": 0.46434936853369374,
+            "ap_std": 0.024682088440200086
+        },
+        "Greedy": {
+            "auc_mean": 0.5282363691049571,
+            "auc_std": 0.006782850486332687,
+            "ap_mean": 0.5322220708613475,
+            "ap_std": 0.02914890026215716
+        },
+        "Random Forest": {
+            "auc_mean": 0.5,
+            "auc_std": 0.0,
+            "ap_mean": 0.5,
+            "ap_std": 0.0
+        },
+        "Linear Regression": {
+            "auc_mean": 0.5,
+            "auc_std": 0.0,
+            "ap_mean": 0.5,
+            "ap_std": 0.0
+        },
+        "Genetic Algorithm": {
+            "auc_mean": 0.4990610316153563,
+            "auc_std": 0.03979852086458685,
+            "ap_mean": 0.5104488992320916,
+            "ap_std": 0.025801729998787496
+        }
+    },
+    "improvements_over_classical": {
+        "Dijkstra": {
+            "auc_improvement": 91.60492622558472,
+            "ap_improvement": 72.73200360803732
+        },
+        "MST": {
+            "auc_improvement": 82.9948194491269,
+            "ap_improvement": 64.94393096134618
+        },
+        "Greedy": {
+            "auc_improvement": 49.555722970542796,
+            "ap_improvement": 43.909120607137744
+        },
+        "Random Forest": {
+            "auc_improvement": 58.00154416165271,
+            "ap_improvement": 53.183220370732556
+        },
+        "Linear Regression": {
+            "auc_improvement": 58.00154416165271,
+            "ap_improvement": 53.183220370732556
+        },
+        "Genetic Algorithm": {
+            "auc_improvement": 58.29881933501672,
+            "ap_improvement": 50.04755676932413
+        }
+    },
+    "statistical_significance": {
+        "Dijkstra": {
+            "auc_tstat": 6.027719960216277,
+            "auc_pvalue": 0.026436345958056443,
+            "ap_tstat": 7.4503268183608276,
+            "ap_pvalue": 0.01754295321634475,
+            "auc_significant": true,
+            "ap_significant": true
+        },
+        "MST": {
+            "auc_tstat": 6.860763419854371,
+            "auc_pvalue": 0.02059101424546081,
+            "ap_tstat": 7.5330054174086305,
+            "ap_pvalue": 0.017169786922667882,
+            "auc_significant": true,
+            "ap_significant": true
+        },
+        "Greedy": {
+            "auc_tstat": 8.666604382046772,
+            "auc_pvalue": 0.0130536805655424,
+            "ap_tstat": 5.574288357777262,
+            "ap_pvalue": 0.03070791508762899,
+            "auc_significant": true,
+            "ap_significant": true
+        },
+        "Random Forest": {
+            "auc_tstat": 8.78905124045249,
+            "auc_pvalue": 0.012699343728281366,
+            "ap_tstat": 10.937688886489905,
+            "ap_pvalue": 0.008255527344971904,
+            "auc_significant": true,
+            "ap_significant": true
+        },
+        "Linear Regression": {
+            "auc_tstat": 8.78905124045249,
+            "auc_pvalue": 0.012699343728281366,
+            "ap_tstat": 10.937688886489905,
+            "ap_pvalue": 0.008255527344971904,
+            "auc_significant": true,
+            "ap_significant": true
+        },
+        "Genetic Algorithm": {
+            "auc_tstat": 14.812781441831403,
+            "auc_pvalue": 0.004526579535273232,
+            "ap_tstat": 39.06859524513732,
+            "ap_pvalue": 0.0006545123844518257,
+            "auc_significant": true,
+            "ap_significant": true
+        }
+    },
+    "network_characteristics": {
+        "num_nodes": 30,
+        "num_edges": 261,
+        "avg_degree": 17.4,
+        "avg_key_rate": 333.61346435546875,
+        "avg_qber": 0.06313557922840118
+    }
+}
