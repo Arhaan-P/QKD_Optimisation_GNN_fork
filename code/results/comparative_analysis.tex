@@ -1,0 +1,55 @@
+
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float}
+
+\title{Comparative QKD Network Analysis}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Network Characteristics Comparison}
+\begin{table}[H]
+\centering
+\caption{Network Characteristics Across Different Node Counts}
+\begin{tabular}{lrrrrr}
+\toprule
+Metric & \multicolumn{5}{c}{Number of Nodes} \\
+\cmidrule(lr){2-6}
+& 10 & 20 & 50 & 100 & 250 \\
+\midrule
+Number of Edges & 39.000 & 123.000 & 718.000 & 2885.000 & 17402.000 \\
+Average Degree & 7.800 & 12.300 & 28.720 & 57.700 & 139.216 \\
+Average Key Rate (bits/s) & 648.496 & 1116.063 & 1036.530 & 2863.562 & 3980.181 \\
+Average QBER & 0.054 & 0.062 & 0.061 & 0.059 & 0.060 \\
+Maximum Distance (km) & 12.072 & 12.072 & 12.383 & 12.420 & 12.426 \\
+Edge Connectivity & 5.000 & 2.000 & 9.000 & 21.000 & 52.000 \\
+Node Connectivity & 5.000 & 2.000 & 8.000 & 15.000 & 41.000 \\
+Algebraic Connectivity & 4.738 & 1.085 & 2.947 & 5.476 & 14.951 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Link Prediction Performance Comparison}
+\begin{table}[H]
+\centering
+\caption{Link Prediction Performance Metrics Across Different Node Counts}
+\begin{tabular}{lrrrrr}
+\toprule
+Metric & \multicolumn{5}{c}{Number of Nodes} \\
+\cmidrule(lr){2-6}
+& 10 & 20 & 50 & 100 & 250 \\
+\midrule
+AUC (mean) & 0.690 & 0.824 & 0.797 & 0.701 & 0.644 \\
+AUC (std) & 0.073 & 0.035 & 0.023 & 0.071 & 0.047 \\
+AP (mean) & 0.703 & 0.781 & 0.734 & 0.660 & 0.604 \\
+AP (std) & 0.078 & 0.031 & 0.023 & 0.054 & 0.044 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

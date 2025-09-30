@@ -1,0 +1,40 @@
+{
+  "num_nodes": 20,
+  "distance_threshold": 100,
+  "wavelength": 1550e-9,
+  "fiber_loss": 0.2,
+  "detector_efficiency": 0.1,
+  "dark_count_rate": 1e-6,
+  "atmospheric_visibility_probability": 0.2,
+  "atmospheric_visibility": 20000,
+  "mean_photon_number": 0.1,
+  "num_pulses": 10000,
+  "link_predictor": {
+    "hidden_channels": 64,
+    "dropout_rate": 0.2
+  },
+  "training": {
+    "num_epochs": 200,
+    "k_folds": 5,
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "early_stopping_patience": 20
+  },
+  "simulation": {
+    "center_covariance": 100,
+    "node_covariance": 10
+  },
+  "report": {
+        "save_path": "results_for_20_nodes"
+  },
+  "attack": {
+  "enabled": true,
+  "type": "passive",
+  "edge_fraction": 0.3,
+  "params": {
+    "leak_fraction": 0.3,   
+    "qber_bump": 0.01       
+  }
+
+}
+}

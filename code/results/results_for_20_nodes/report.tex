@@ -1,0 +1,64 @@
+
+    \documentclass{article}
+    \usepackage{graphicx}
+    \usepackage{booktabs}
+    \usepackage{float}
+    \title{QKD Network Analysis Report}
+    \date{2025-02-17}
+    \begin{document}
+    \maketitle
+
+    \section{Network Characteristics}
+    Number of nodes: 20 \\
+    Number of edges: 123 \\
+    Average degree: 12.30 \\
+    Average clustering coefficient: 0.858 \\
+    Average shortest path length: 1.47
+
+    \section{QKD Performance}
+    Average key rate: 1.12e+03 bits/s \\
+    Average QBER: 0.062 \\
+    Maximum link distance: 12.1 km
+
+    \section{Link Prediction Performance}
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{lcc}
+    \toprule
+    Metric & Mean & Std. Dev. \\
+    \midrule
+    AUC & 0.824 &
+        0.035 \\
+    AP & 0.781 &
+        0.031 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Link Prediction Performance Metrics}
+    \end{table}
+
+    \section{Network Reliability}
+    Edge connectivity: 2 \\
+    Node connectivity: 2 \\
+    Algebraic connectivity: 1.085
+
+    \section{Figures}
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{network_topology.png}
+    \caption{QKD Network Topology}
+    \end{figure}
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{training_metrics.png}
+    \caption{Training and Validation Metrics}
+    \end{figure}
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{link_quality_heatmap.png}
+    \caption{Link Quality Heatmap}
+    \end{figure}
+
+    \end{document}
+    

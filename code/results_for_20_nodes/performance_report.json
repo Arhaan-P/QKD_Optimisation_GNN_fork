@@ -1,0 +1,22 @@
+{
+    "network_stats": {
+        "num_nodes": 20,
+        "num_edges": 123,
+        "avg_degree": 12.3,
+        "avg_key_rate": 318007.21875,
+        "avg_qber": 0.06626030057668686,
+        "max_distance": 12.071895599365234
+    },
+    "model_performance": {
+        "final_metrics": {
+            "auc_mean": 0.8558450000000001,
+            "auc_std": 0.04657481139833119,
+            "ap_mean": 0.8425280117044739,
+            "ap_std": 0.05182838316665138
+        },
+        "convergence": {
+            "final_train_loss_mean": 0.6367286384105683,
+            "best_epoch_mean": 11.6
+        }
+    }
+}
