@@ -1,0 +1,6 @@
+code/venv/
+code/bin/
+code/__pycache__/
+code/*.pyc
+code/*.pyo
+code/lib/
